@@ -1,12 +1,14 @@
 window.onload = function() {
 
-  setTimeout(function() {})
+  setTimeout(function() {
+    document.body.classList.add('loaded')
+  
+    Draggable.create('.gallery', {
+      bounds: 'body',
+      inertia: true
+    })
 
-  document.body.classList.add('loaded')
+  }, 200)
 
-  Draggable.create('.gallery', {
-    bounds: 'body',
-    inertia: true
-  })
 
 }
